@@ -9,27 +9,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="homepage">
     <header class="header">
         <div class="contenedor">
-            <h3 class="header__logo">Paideia <span class="header__logo--bold">Nova</div> </h3>
-            <nav class="header__navegacion">
-                <a href="#" class="header__enlace">
-                    <img src="img/header/home.svg" alt="Home" class="header__icono">
-                    <h4 class="header__link">Inicio</h4>
-                </a>
+            <div class="header__flex">
+                <h3 class="header__logo">Paideia <span class="header__logo--bold">Nova</span> </h3>
+                <nav class="header__navegacion">
+                    <a href="#" class="header__enlace">
+                        <img src="img/header/home.svg" alt="Home" class="header__icono">
+                        <h4 class="header__link">Inicio</h4>
+                    </a>
 
-                <a href="#" class="header__enlace">
-                    <img src="img/header/trophy.svg" alt="Ranking" class="header__icono">
-                    <h4 class="header__link">Ranking</h4>
-                </a>
-
-                <a href="#" class="header__enlace">
-                    <img src="img/header/profile.svg" alt="Perfil" class="header__icono">
-                    <h4 class="header__link">Mi Perfil</h4>
-                </a>
-            </nav>
+                    <a href="#" class="header__enlace">
+                        <img src="img/header/university.svg" alt="University" class="header__icono">
+                        <h4 class="header__link">Universidades</h4>
+                    </a>
+    
+                    <a href="#" class="header__enlace">
+                        <img src="img/header/trophy.svg" alt="Ranking" class="header__icono">
+                        <h4 class="header__link">Ranking</h4>
+                    </a>
+    
+                    <a href="#" class="header__enlace">
+                        <img src="img/header/profile.svg" alt="Perfil" class="header__icono">
+                        <h4 class="header__link">Mi Perfil</h4>
+                    </a>
+                </nav>
+            </div>
         </div>
     </header>
+
+    <main class="busqueda">
+        <div class="contenedor">
+            <h1 class="busqueda__logo">Paideia <span class="busqueda__logo--bold">Nova</span> </h1>
+            <h2 class="busqueda__slogan">Todo lo que necesitas saber sobre tus profesores</h2>
+
+            <form action="#" class="buscar">
+                <div class="buscar__contenedor">
+                    <input type="text" class="buscar__barra" placeholder="¿Qué profesor estás buscando?...">
+                    <button class="buscar__lupa" type="submit">
+                        <img class="buscar__img" src="img/header/search.svg" alt="Buscar">
+                    </button>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown__button">Profesores <span class="dropdown__icon">▼</span></button>
+                    <ul class="dropdown__menu">
+                        <li class="dropdown__item" data-value="Profesores">Profesores</li>
+                        <li class="dropdown__item" data-value="Materias">Materias</li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/dropdown.js"></script>
 </body>
 </html>
