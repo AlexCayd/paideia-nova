@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paideia Nova</title>
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -39,37 +40,36 @@
         </div>
     </header>
 
-    
-    <section class="universidades contenedor">
+    <main class="login contenedor">
         <div class="breadcrum">
-            <a href="../../../index.html" class="breadcrum__enlace">Inicio</a>
+            <a href="../../index.html" class="breadcrum__enlace">Inicio</a>
             <h3 class="breadcrum__separador"> > </h3>
-            <a href="../universidades.html" class="breadcrum__enlace">Universidades</a>
+            <h3 class="breadcrum__enlace"> Iniciar sesión </h3>
         </div>
 
-        <h2 class="heading">Universidades</h2>
-        <div class="universidades__grid">
-            <a href="campus/campus.html" class="universidad universidad__anahuac">Universidad Anáhuac</a>
-            <h3 class="universidades__mas">Próximamente más universidades...</h3>
-        </div>
-    </section>
-
-    <div class="mensaje">
-        <div class="contenedor">
-            <h2 class="heading heading--secundario">Mensaje del equipo</h2>
-            <p class="mensaje__texto">¡Hola! Somos el equipo de <span class="bold">Paideia Nova</span>. Estamos comprometidos en brindarte una plataforma confiable para que encuentres, compartas y descubras experiencias reales sobre profesores y cursos.</p>
-
-            <div class="mensaje__grid">
-                <img src="../../img/mensaje/lock.svg" alt="Lock" class="mensaje__icon">
-                <p class="mensaje__texto"><span class="bold">Importante:</span> Las opiniones publicadas son responsabilidad de quienes las escriben. Nuestro rol es ofrecer un espacio seguro y respetuoso para todos.</p>
+        <h2 class="heading">Iniciar sesión</h2>
+        <form class="login__formulario">
+            <div class="login__contenedor">
+                <div class="login__campo">
+                    <label for="email" class="login__label">Correo electrónico</label>
+                    <input type="email" class="login__input">
+                </div>
+    
+                <div class="login__campo">
+                    <label for="password" class="login__label">Contraseña</label>
+                    <input type="password" class="login__input">
+                </div>
             </div>
 
-            <div class="mensaje__grid">
-                <img src="../../img/mensaje/idea.svg" alt="Idea" class="mensaje__icon">
-                <p class="mensaje__texto">Nos esforzamos por construir una comunidad académica basada en el respeto y la honestidad. <span class="bold">¡Gracias por ser parte de Paideia Nova!</span></p>
-            </div>
+            <input type="submit" value="Iniciar sesión" class="login__submit">
+        </form>
+
+        <div class="login__extras">
+            <a href="#" class="login__olvidar">¿Olvidaste la contraseña? No te preocupes, haz click aquí</a>
+            <a href="#" class="login__btncrear">¿No tienes una cuenta? Regístrate</a>
         </div>
-    </div>
+    </main>
+
 
     <footer class="footer">
         <div class="footer__contenido">
@@ -78,7 +78,7 @@
                 <a href="#" class="footer__enlace">Inicio</a>
                 <a href="#" class="footer__enlace">Universidades</a>
                 <a href="#" class="footer__enlace">Ranking</a>
-                <a href="../miperfil/login.html" class="footer__enlace">Mi Perfil</a>
+                <a href="#" class="footer__enlace">Mi Perfil</a>
             </nav>
         </div>
 

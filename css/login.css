@@ -1,0 +1,149 @@
+/* GLOBALES */
+
+:root {
+    --fuentePrincipal: "Outfit", sans-serif;
+    --colorPrincipal: #46BDC6;
+    --colorSecundario: #4267AC;
+    --colorNeutro: #f5f5f5;
+    --borderRadius: 35px;
+}
+
+.login {
+    margin-bottom: 50px;
+    min-height: 70vh;
+}
+
+@media screen and (min-width: 768px) {
+    .login {
+        min-height: 60vh;
+    }
+}
+
+.login__label {
+    color: var(--colorSecundario);
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .login__label {
+        font-size: 20px;
+    }
+}
+
+.login__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .login__contenedor {
+        flex-direction: row;
+        gap: 100px;
+    }
+}
+
+.login__input {
+    border: none;
+    padding: 10px 15px;
+    font-size: 12px;
+    width: 90%;
+    margin-top: 10px;
+    color: var(--colorNeutro);
+    background-color: var(--colorSecundario);
+    border-radius: var(--borderRadius);
+    font-family: inherit;
+    font-weight: bold;
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .login__input {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+}
+
+.login__submit {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    font-family: inherit;
+    color: var(--colorNeutro);
+    background-color: var(--colorPrincipal);
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 50px;
+    border-radius: var(--borderRadius);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+@media screen and (min-width: 768px) {
+    .login__submit {
+        padding: 20px 70px;
+        font-size: 18px;
+        margin: 40px auto 60px auto;
+    }
+}
+
+.login__submit:hover {
+    border-radius: 20px;
+}
+
+.login__formulario {
+    border-bottom: 3px solid var(--colorPrincipal);
+}
+
+.login__extras {
+    margin-top: 20px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .login__extras {
+        margin-top: 40px;
+        flex-direction: row;
+    }
+}
+
+.login__olvidar {
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .login__olvidar {
+        font-size: 16px;
+    }
+}
+
+.login__btncrear {
+    padding: 10px 25px;
+    border-radius: var(--borderRadius);
+    background-color: var(--colorSecundario);
+    color: var(--colorNeutro);
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.5s all;
+}
+
+.login__btncrear:hover {
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .login__btncrear {
+        font-size: 16px;
+    }
+}
