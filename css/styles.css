@@ -411,6 +411,7 @@ img {
 
 .universidad:hover {
     border-radius: 50px;
+    background-color: var(--colorSecundario);
 }
 
 .universidad__anahuac {

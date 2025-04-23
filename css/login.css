@@ -147,3 +147,56 @@
         font-size: 16px;
     }
 }
+
+/* OLVIDE LA CONTRASEÑA */
+
+.olvidargrid {
+    display: grid;
+    align-items: center;
+    gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .olvidargrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.olvidar__titulo {
+    color: var(--colorPrincipal);
+}
+
+.olvidarform__input {
+    font-family: inherit;
+    border: none;
+    margin: 40px 0 20px 0;
+    font-size: 16px;
+    background-color: var(--colorSecundario);
+    color: var(--colorNeutro);
+    padding: 15px 30px;
+    border-radius: var(--borderRadius);
+    display: block;
+    width: 80%;
+    outline: none;
+}
+
+.olvidarform__input::placeholder {
+    color: var(--colorNeutro);
+}
+
+.olvidarform__submit {
+    font-family: inherit;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: var(--colorPrincipal);
+    padding: 20px 40px;
+    color: var(--colorNeutro);
+    border-radius: var(--borderRadius);
+}
+
+.olvidargrid__texto {
+    text-align: right;
+    color: var(--colorPrincipal);
+}
